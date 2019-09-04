@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 import home from './icon/home.svg';
 import more from './icon/more.svg';
 import notifanction from './icon/notifanction.svg';
 import validation from './icon/validation.svg';
 
-const NavBarWrapper = styled.div `
+const NavBarWrapper = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -18,18 +19,22 @@ const NavBarWrapper = styled.div `
   align-items: center;
 `;
 
-const NavBarLink = styled.div `
+const NavBarLink = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   &:hover {
     cursor: pointer;
   }
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
-const Img = styled.img `
+const Img = styled.img`
   width: 24px;
   height: 24px;
   background-position: center;
@@ -38,7 +43,7 @@ const Img = styled.img `
   margin-bottom: 5px;
 `;
 
-const Name = styled.div `
+const Name = styled.div`
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
@@ -51,20 +56,28 @@ const NavBar = () => {
   return (
     <NavBarWrapper>
       <NavBarLink>
-        <Img src={home}/>
-        <Name active={true}>Главный</Name>
+        <Link to="/">
+          <Img src={home}/>
+          <Name active={true}>Главный</Name>
+        </Link>
       </NavBarLink>
       <NavBarLink>
-        <Img src={validation}/>
-        <Name>Валидации</Name>
+        <Link to="/validation">
+          <Img src={validation}/>
+          <Name>Валидации</Name>
+        </Link>
       </NavBarLink>
       <NavBarLink>
-        <Img src={notifanction}/>
-        <Name>Уведомления</Name>
+        <Link to="/notifanction">
+          <Img src={notifanction}/>
+          <Name>Уведомления</Name>
+        </Link>
       </NavBarLink>
       <NavBarLink>
-        <Img src={more}/>
-        <Name>Еще</Name>
+        <Link to="/more">
+          <Img src={more}/>
+          <Name>Еще</Name>
+        </Link>
       </NavBarLink>
     </NavBarWrapper>
   )

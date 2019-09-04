@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
 import Wallet from "../wallet/wallet";
+import {Route} from "react-router-dom";
 
-import Plus from './plus.svg';
+import HomePage from "../pages/homePage/homePage";
+import ValidationPage from "../pages/validationPage/validationPage";
+import NotifanctionPage from "../pages/notifanctionPage/notifanctionPage";
+import MorePage from "../pages/morePage/morePage";
+
+import Plus from '../pages/homePage/plus.svg';
 
 const ContentBg = styled.div `
   background-color: #fff;
@@ -14,43 +20,16 @@ const ContentBg = styled.div `
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 24px 16px;
-`;
-
-const AddWallet = styled.button `
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  height: 48px;
-  background: #8DC045;
-  border-radius: 1000px;
-  padding: 0 20px 0 12px;
-  margin: 0 auto;
-`;
-
-const PlusIcon = styled.div `
-  width: 24px;
-  min-width: 24px;
-  height: 24px;
-  background-position: center;
-  background-size: 14px;
-  background-repeat: no-repeat;
-  background-image:url(${Plus});
-  margin-right: 12px;
+  overflow: auto;
 `;
 
 const Content = () => {
   return (
     <ContentBg>
-      <Wallet/>
-      <Wallet/>
-      <AddWallet><PlusIcon/>Добавить счет</AddWallet>
+      <Route path="/" exact render={HomePage}/>
+      <Route path="/validation" exact render={ValidationPage}/>
+      <Route path="/notifanction" exact render={NotifanctionPage}/>
+      <Route path="/more" exact render={MorePage}/>
     </ContentBg>
   )
 };
