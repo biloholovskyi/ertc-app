@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 import Logo from './ErtcLogo.svg';
+import Euro from './euro.svg';
 
 const WalletWrapper = styled.div `
   width: 100%;
@@ -21,9 +22,9 @@ const Icon = styled.div `
   min-width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url(${props => props.iconImg});
+  background-image: url(${props => props.name === "ertc" ? Logo : Euro});
   background-position: center;
-  background-size: ${props => props.ertc ? "cover" : "16px"};
+  background-size: ${props => props.name === "ertc" ? "cover" : "16px"};
   background-repeat: no-repeat;
   margin-right: 16px;
   background-color: #EFEFEF;
@@ -67,12 +68,12 @@ const WalletButton = styled.button `
   background-color: transparent;
 `;
 
-const Wallet = () => {
+const Wallet = ({name, count}) => {
   return (
     <WalletWrapper>
       <WalletPrice>
-        <Icon ertc={true} iconImg={Logo}/>
-        <WalletCount>1’450.00<span>ertc</span></WalletCount>
+        <Icon name={name}/>
+        <WalletCount>{count}<span>{name}</span></WalletCount>
       </WalletPrice>
       <ButtonWrapper>
         <WalletButton>вывод средств</WalletButton>

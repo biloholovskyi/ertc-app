@@ -4,16 +4,27 @@ import {Route} from "react-router-dom";
 
 import MobileLine from "../mobileLine/mobileLine";
 import HeaderHome from "./headerHome/headerHome";
+import HeaderValidation from "./headerValidation/headerValidation";
+import HeaderNotification from "./headerNotifanction/headerNotifanction";
+import HeaderMore from "./headerMore/headerMore";
 
 import patternBg from './patternBg.svg';
 
 const HeadBG = styled.header `
   width: 100%;
-  height: 180px;
-  background-image: url(${patternBg});
-  background-position: center;
   position: relative;
-  padding-top: calc(24px + 14px);
+  padding-top: 24px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    left: 0;
+    background-image: url(${patternBg});
+    background-position: center;
+    background-size: cover;
+  }
 `;
 
 const Header = () => {
@@ -21,6 +32,9 @@ const Header = () => {
     <HeadBG>
       <MobileLine/>
       <Route path="/" exact render={HeaderHome}/>
+      <Route path="/validation" exact render={HeaderValidation}/>
+      <Route path="/notifanction" exact render={HeaderNotification}/>
+      <Route path="/more" exact render={HeaderMore}/>
     </HeadBG>
   )
 };

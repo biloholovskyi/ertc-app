@@ -43,20 +43,21 @@ const Status = styled.div `
 const Desc = styled.div `
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 16px;      
   letter-spacing: -0.02em;
   color: #393738;
 `;
 
-const ValidationAction = () => {
+const ValidationAction = ({count, date, message, status}) => {
+  count = count.split("^");
   return (
     <ActionWrapper>
       <Info>
-        <Name>45m<sup>2</sup></Name>
-        <Date>12 Июля 2019, 20:28</Date>
+        <Name>{`${count[0]}`}<sup>{count[1]}</sup>{count[2]}</Name>
+        <Date>{date}</Date>
       </Info>
-      <Status state="moderation">На модерации</Status>
-      <Desc>Lorem ipsum dolor sit amet, consectetur adipiscing</Desc>
+      <Status state={status}>{status === "moderation" ? "На модерации" : status === "confirmed" ? "Успешно" : "Отклонено медератором"}</Status>
+      <Desc>{message}</Desc>
     </ActionWrapper>
   )
 };

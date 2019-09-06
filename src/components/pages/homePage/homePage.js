@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 
+import store from "../../../store/store";
+
 import Wallet from "../../wallet/wallet";
 
 import Plus from "./plus.svg";
+import NotifanctionItem from "../../notifanctionItem/notifanctionItem";
 
 const AddWallet = styled.button `
   font-weight: 500;
@@ -35,12 +38,22 @@ const PlusIcon = styled.div `
 `;
 
 const HomePage = () => {
+  const walletArr = store.filter(item => item.name === "wallet");
+  const walletList = walletArr[0].arr.map((item) => {
+    const {id, count, name} = item;
+    return (
+      <Wallet
+        key={id}
+        count={count}
+        name={name}
+      />
+    );
+  });
   return (
-    <div>
-      <Wallet/>
-      <Wallet/>
+    <>
+      {walletList}
       <AddWallet><PlusIcon/>Добавить счет</AddWallet>
-    </div>
+    </>
   )
 };
 

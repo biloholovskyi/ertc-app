@@ -8,6 +8,10 @@ const HeaderContent = styled.div `
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: relative;
+  z-index: 50;
 `;
 
 const Avatar = styled.div `

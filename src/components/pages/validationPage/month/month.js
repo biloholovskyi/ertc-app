@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
+
 import ValidationAction from "./validationAction/validationAction";
 
 const NameMonth = styled.div `
@@ -33,17 +34,27 @@ const LineMonth = styled.div `
   left: 0;
 `;
 
-const Month = ({name}) => {
+const Month = ({name, actions}) => {
   const nameMonth = name === "current" ? false : name === "previous" ? "прошлый месяц" : name;
+  const actionList = actions.map((item) => {
+    const {id, count, date, message, status} = item;
+    return (
+      <ValidationAction
+        key={id}
+        count={count}
+        date={date}
+        message={message}
+        status={status}
+      />
+    );
+  });
   return (
     <>
       <NameMonth name={name}>
         <LineMonth/>
         <span>{nameMonth}</span>
       </NameMonth>
-      <ValidationAction/>
-      <ValidationAction/>
-      <ValidationAction/>
+      {actionList}
     </>
   )
 };

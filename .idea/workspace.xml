@@ -2,29 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277f8743-121c-499b-b31b-6efc4b8112cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/header/headerHome/headerHome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/notifanctionItem/icon/confirm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/notifanctionItem/icon/downloud.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/notifanctionItem/icon/import.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/notifanctionItem/icon/warning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/notifanctionItem/notifanctionItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/homePage/homePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/morePage/morePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/notifanctionPage/notifanctionPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/validationPage/month/month.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/validationPage/month/validationAction/validationAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/validationPage/validationPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/headerMore/headerMore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/headerNotifanction/headerNotifanction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/headerValidation/headerValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/homePage/plus.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/userAvatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerHome/userAvatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/headerHome/headerHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerHome/headerHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/more.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/notifanction.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/validation.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/navBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/confirm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/downloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/import.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/warning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/notifanctionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notifanctionItem/notifanctionItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/homePage/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/homePage/homePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/morePage/morePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/morePage/morePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/notifanctionPage/notifanctionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/notifanctionPage/notifanctionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/validationPage/month/month.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/validationPage/month/month.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/validationPage/month/validationAction/validationAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/validationPage/month/validationAction/validationAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/validationPage/validationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/validationPage/validationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/wallet/wallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wallet/wallet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,11 +49,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -71,6 +82,23 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,7 +111,9 @@
       <updated>1567416793586</updated>
       <workItem from="1567416796378" duration="10711000" />
       <workItem from="1567439035646" duration="7560000" />
-      <workItem from="1567598335995" duration="5589000" />
+      <workItem from="1567598335995" duration="7478000" />
+      <workItem from="1567668348246" duration="11572000" />
+      <workItem from="1567772315009" duration="11743000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1567416925652</created>
@@ -99,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567428030962</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create main page">
+      <created>1567606080963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567606080963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project" />
     <MESSAGE value="create components: app, content, header, navBar, wallet" />
-    <option name="LAST_COMMIT_MESSAGE" value="create components: app, content, header, navBar, wallet" />
+    <MESSAGE value="create main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="create main page" />
   </component>
 </project>
