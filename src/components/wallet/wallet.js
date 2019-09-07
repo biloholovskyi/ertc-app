@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {NavLink, Link} from "react-router-dom";
 
 import Logo from './ErtcLogo.svg';
 import Euro from './euro.svg';
@@ -7,7 +8,7 @@ import Euro from './euro.svg';
 const WalletWrapper = styled.div `
   width: 100%;
   margin-bottom: 24px;
-  padding-bottom: 24px;
+  padding-bottom: ${props => props.pageType === "home" ? "24px" : "16px"};
   border-bottom: 1px solid rgba(57, 55, 56, 0.1);
 `;
 
@@ -68,18 +69,64 @@ const WalletButton = styled.button `
   background-color: transparent;
 `;
 
-const Wallet = ({name, count}) => {
+const WalletDotWrapper = styled.div `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .activeDot {
+    div {
+      background-color:  #ADD47D !important;
+    }
+  }
+`;
+
+const Dot = styled.div `
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  margin: 0 4px;
+`;
+
+const Wallet = ({name, count, page, id}) => {
   return (
-    <WalletWrapper>
-      <WalletPrice>
-        <Icon name={name}/>
-        <WalletCount>{count}<span>{name}</span></WalletCount>
-      </WalletPrice>
+    <WalletWrapper pageType={page}>
+      {
+        page === "home" ? <WalletPriceView name={name} count={count} id={id}/> : (
+          <WalletPrice>
+            <Icon name={name}/>
+            <WalletCount>{count}<span>{name}</span></WalletCount>
+          </WalletPrice>
+        )
+      }
       <ButtonWrapper>
         <WalletButton>вывод средств</WalletButton>
         <WalletButton>Новый платеж</WalletButton>
       </ButtonWrapper>
+      {
+        page === "wallet" ? <WalletDotView/> : false
+      }
     </WalletWrapper>
+  )
+};
+
+const WalletDotView = () => {
+  return (
+    <WalletDotWrapper>
+      <NavLink exact to="/wallet/1" activeClassName="activeDot"><Dot/></NavLink>
+      <NavLink exact to="/wallet/2" activeClassName="activeDot"><Dot/></NavLink>
+    </WalletDotWrapper>
+  )
+};
+
+const WalletPriceView = ({name, count, id}) => {
+  return (
+    <Link to={`/wallet/${id}`}>
+      <WalletPrice>
+        <Icon name={name}/>
+        <WalletCount>{count}<span>{name}</span></WalletCount>
+      </WalletPrice>
+    </Link>
   )
 };
 

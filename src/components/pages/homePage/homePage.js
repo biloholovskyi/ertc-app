@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {withRouter} from "react-router";
 
 import store from "../../../store/store";
 
@@ -46,6 +47,8 @@ const HomePage = () => {
         key={id}
         count={count}
         name={name}
+        page="home"
+        id={id}
       />
     );
   });
@@ -57,4 +60,4 @@ const HomePage = () => {
   )
 };
 
-export default HomePage;
+export default withRouter(HomePage);

@@ -6,6 +6,7 @@ import Header from "../header/header";
 import NavBar from "../navBar/navBar";
 import Content from "../content/content";
 import WalletPage from "../pages/walletPage/walletPage";
+import HomePage from "../pages/homePage/homePage";
 
 const AppWrapper = styled.div `
   width: 100%;
@@ -37,7 +38,12 @@ function App() {
           <Header/>
           <Content/>
           <Switch>
-            <Route path="/wallet" exact render={WalletPage}/>
+            <Route path="/wallet/:id" exact render={
+              ({match}) => {
+                const {id} = match.params;
+                return <WalletPage id={id}/>
+              }
+            }/>
           </Switch>
           <NavBar/>
         </MobileWrapper>

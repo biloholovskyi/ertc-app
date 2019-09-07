@@ -48,7 +48,7 @@ const Line = styled.div `
 `;
 
 const Converter = styled.div `
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.02em;

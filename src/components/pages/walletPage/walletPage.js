@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import store from "../../../store/store";
 
 import Wallet from "../../wallet/wallet";
+import HistoryActions from "./historyActions/historyActions";
 
 import BackImg from './back.svg';
 import MenuImg from './menu.svg';
@@ -18,6 +19,7 @@ const WalletWrapper = styled.div `
   z-index: 700;
   background-color: #fff;
   padding: 16px;
+  padding-bottom: 0;
 `;
 
 const NavLine = styled.div `
@@ -46,19 +48,10 @@ const Menu = styled(NavLineButton) `
   background-size: 24px;
 `;
 
-const WalletPage = () => {
+const WalletPage = ({id}) => {
   const walletArr = store.filter(item => item.name === "wallet");
-  // const walletList = walletArr[0].arr.map((item) => {
-  //   const {id, count, name} = item;
-  //   return (
-  //     <Wallet
-  //       key={id}
-  //       count={count}
-  //       name={name}
-  //     />
-  //   );
-  // });
-  const {count, name} = walletArr[0].arr[0];
+  const current = walletArr[0].arr.filter(item => item.id === id);
+  const {count, name} = current[0];
   return (
     <WalletWrapper>
       <NavLine>
@@ -67,7 +60,12 @@ const WalletPage = () => {
         </Link>
         <Menu/>
       </NavLine>
-      <Wallet count={count} name={name}/>
+      <Wallet
+        count={count}
+        name={name}
+        page="wallet"
+      />
+      <HistoryActions actions={current[0].actions}/>
     </WalletWrapper>
   )
 };

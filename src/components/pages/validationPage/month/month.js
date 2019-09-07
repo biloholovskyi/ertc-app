@@ -5,7 +5,7 @@ import styled from "styled-components";
 import ValidationAction from "./validationAction/validationAction";
 
 const NameMonth = styled.div `
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 19px;
   text-align: center;

@@ -58,8 +58,90 @@ const store = [
   {
     name: "wallet",
     arr: [
-      {id: "1", name: "ertc", count: "1’450.00"},
-      {id: "2", name: "euro", count: "2’389.87"}
+      {
+        id: "1",
+        name: "ertc",
+        count: "1’450.00",
+        actions: [
+          {
+            id: "1",
+            name: "Tina Laurence",
+            desc: "Перевод средств",
+            avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR581YPwylOoqQ15f6o1Nfk2prdMbmyJvnbMg77zeMznv5ofvIYnQ",
+            count: "-80.00"
+          },
+          {
+            id: "2",
+            name: "ebay.com",
+            desc: "Оплата товаров",
+            avatar: "http://www.pngnames.com/files/4/EBay-Logo-PNG-Free-Background.png",
+            count: "-280.00"
+          },
+          {
+            id: "3",
+            name: "Starbucks",
+            desc: "Оплата услуг",
+            avatar: "https://qph.fs.quoracdn.net/main-qimg-111af2681975b2df999afa985218bee1-c",
+            count: "-80.00"
+          },
+          {
+            id: "4",
+            name: "Райффайзенбанк",
+            desc: "Вывод средств",
+            avatar: "https://www.fantastika-nn.ru/upload/iblock/ebb/raif.jpg",
+            count: "-10.00"
+          },
+          {
+            id: "5",
+            name: "Takeshi Ito",
+            desc: "Перевод средств",
+            avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
+            count: "+240.00"
+          }
+        ]
+      },
+      {
+        id: "2",
+        name: "euro",
+        count: "2’389.87",
+        actions: [
+          {
+            id: "1",
+            name: "Takeshi Kovacs",
+            desc: "Оплата товаров",
+            avatar: "https://66.media.tumblr.com/eebd0deab9f058ee413cefc6fe5b7854/tumblr_pd02djBpUe1v24kv4o8_250.png",
+            count: "-120.00"
+          },
+          {
+            id: "2",
+            name: "сбербанк",
+            desc: "Вывод Средств",
+            avatar: "https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/b5/40/ae/b540ae01-e3df-46ac-285b-0607edf74aa2/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/246x0w.jpg",
+            count: "-500.00"
+          },
+          {
+            id: "3",
+            name: "Starbucks",
+            desc: "Оплата услуг",
+            avatar: "https://qph.fs.quoracdn.net/main-qimg-111af2681975b2df999afa985218bee1-c",
+            count: "-60.00"
+          },
+          {
+            id: "4",
+            name: "Райффайзенбанк",
+            desc: "Вывод средств",
+            avatar: "https://www.fantastika-nn.ru/upload/iblock/ebb/raif.jpg",
+            count: "-10.00"
+          },
+          {
+            id: "5",
+            name: "Takeshi Ito",
+            desc: "Перевод средств",
+            avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
+            count: "+240.00"
+          }
+        ]
+      }
     ]
   }
 ];

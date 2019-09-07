@@ -2,34 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277f8743-121c-499b-b31b-6efc4b8112cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/header/headerMore/headerMore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/headerNotifanction/headerNotifanction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/headerValidation/headerValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/walletPage/historyActions/historyActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/walletPage/historyActions/historyList/historyItem/historyItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/walletPage/historyActions/historyList/historyList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/headerHome/headerHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerHome/headerHome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/home.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/more.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/notifanction.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/icon/validation.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/navBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/confirm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/downloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/import.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/icon/warning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/headerMore/headerMore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerMore/headerMore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/headerValidation/headerValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerValidation/headerValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/notifanctionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notifanctionItem/notifanctionItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/homePage/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/homePage/homePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/morePage/morePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/morePage/morePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/notifanctionPage/notifanctionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/notifanctionPage/notifanctionPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/validationPage/month/month.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/validationPage/month/month.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/validationPage/month/validationAction/validationAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/validationPage/month/validationAction/validationAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/validationPage/validationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/validationPage/validationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/wallet/wallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wallet/wallet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +101,8 @@
       <workItem from="1567439035646" duration="7560000" />
       <workItem from="1567598335995" duration="7478000" />
       <workItem from="1567668348246" duration="11572000" />
-      <workItem from="1567772315009" duration="11743000" />
+      <workItem from="1567772315009" duration="11785000" />
+      <workItem from="1567840833391" duration="8624000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1567416925652</created>
@@ -136,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567606080963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pre finish web demo">
+      <created>1567800214978</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567800214978</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +155,7 @@
     <MESSAGE value="start project" />
     <MESSAGE value="create components: app, content, header, navBar, wallet" />
     <MESSAGE value="create main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="create main page" />
+    <MESSAGE value="pre finish web demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre finish web demo" />
   </component>
 </project>

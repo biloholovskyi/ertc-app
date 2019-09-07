@@ -28,7 +28,7 @@ const Title = styled.div `
 `;
 
 const Desc = styled.div `
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: -0.02em;

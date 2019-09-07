@@ -15,7 +15,7 @@ const Info = styled.div `
 `;
 
 const Name = styled.div `
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.02em; 
@@ -23,7 +23,7 @@ const Name = styled.div `
 `;
 
 const Date = styled.div `
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   text-align: right;
@@ -32,7 +32,7 @@ const Date = styled.div `
 `;
 
 const Status = styled.div `
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -0.02em;
