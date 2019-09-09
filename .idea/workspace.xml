@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277f8743-121c-499b-b31b-6efc4b8112cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/navBar/clickEffect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notifanctionItem/notifanctionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notifanctionItem/notifanctionItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/walletPage/historyActions/historyActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/walletPage/historyActions/historyActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/wallet/wallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wallet/wallet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/navBar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +90,7 @@
       <workItem from="1567668348246" duration="11572000" />
       <workItem from="1567772315009" duration="11785000" />
       <workItem from="1567840833391" duration="9897000" />
-      <workItem from="1568016762241" duration="11321000" />
+      <workItem from="1568016762241" duration="17739000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1567416925652</created>
@@ -134,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567850949562</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="editing and creating animations open component">
+      <created>1568056976228</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568056976228</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +159,7 @@
     <MESSAGE value="create main page" />
     <MESSAGE value="pre finish web demo" />
     <MESSAGE value="finish web demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish web demo" />
+    <MESSAGE value="editing and creating animations open component" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing and creating animations open component" />
   </component>
 </project>
