@@ -2,9 +2,13 @@ import React from 'react';
 import styled from "styled-components";
 
 const ItemBox = styled.div `
-  display: flex;
   padding-bottom: 16px;
   margin-bottom: 24px;
+`;
+
+const Top = styled.div `
+  display: flex;
+  align-items: center;
   span {
     font-size: 20px;
     margin-right: 14px;
@@ -12,9 +16,6 @@ const ItemBox = styled.div `
   }
 `;
 
-const Text = styled.div `
-
-`;
 
 const Title = styled.div `
   font-weight: 500;
@@ -31,17 +32,18 @@ const Desc = styled.div `
   line-height: 19px;
   letter-spacing: -0.02em;
   color: rgba(57, 55, 56, 0.56);
+  margin-left: 34px;
 `;
 
 const NotifanctionItem = ({icon, title, message, status}) => {
   title = title.split("^");
   return (
     <ItemBox status={status}>
-      <span className={"icon-" + icon}></span>
-      <Text>
+      <Top status={status}>
+        <span className={"icon-" + icon}></span>
         <Title>{title[0]}<sup>{title[1]}</sup>{title[2]}</Title>
-        {status === "notifanction" ? <Desc>{message}</Desc> : false}
-      </Text>
+      </Top>
+      {status === "notifanction" ? <Desc>{message}</Desc> : false}
     </ItemBox>
   )
 };

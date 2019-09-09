@@ -29,6 +29,7 @@ export default class Content extends Component {
       <ContentWrapper>
         <Switch>
           <Route path="/" exact render={HomePage}/>
+          <Route path="/wallet/" render={HomePage}/>
           <Route path="/validation" exact render={ValidationPage}/>
           <Route path="/notifanction" exact render={NotifanctionPage}/>
           <Route path="/more" exact render={MorePage}/>

@@ -27,6 +27,9 @@ const HistoryHeadButton = styled.button `
   display: flex;
   justify-content: center;
   align-items: center;
+  span {
+    font-size: 18px;
+  }
 `;
 
 const HistoryActions = ({actions}) => {

@@ -139,6 +139,41 @@ const store = [
             desc: "Перевод средств",
             avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
             count: "+240.00"
+          },
+          {
+            id: "6",
+            name: "Takeshi Ito",
+            desc: "Перевод средств",
+            avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
+            count: "+240.00"
+          },
+          {
+            id: "7",
+            name: "Takeshi Ito",
+            desc: "Перевод средств",
+            avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
+            count: "+240.00"
+          },
+          {
+            id: "8",
+            name: "Takeshi Ito",
+            desc: "Перевод средств",
+            avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
+            count: "+240.00"
+          },
+          {
+            id: "9",
+            name: "Takeshi Ito",
+            desc: "Перевод средств",
+            avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
+            count: "+240.00"
+          },
+          {
+            id: "10",
+            name: "Takeshi Ito",
+            desc: "Перевод средств",
+            avatar: "https://www.kinonews.ru/insimgs/2018/persimg/persimg35375.jpg",
+            count: "+240.00"
           }
         ]
       }

@@ -9,7 +9,7 @@ const WalletWrapper = styled.div `
   width: 100%;
   margin-bottom: 24px;
   padding-bottom: ${props => props.pageType === "home" ? "24px" : "16px"};
-  border-bottom: 1px solid rgba(57, 55, 56, 0.1);
+  border-bottom: 0.5px solid rgba(57, 55, 56, 0.1);
 `;
 
 const WalletPrice = styled.div `

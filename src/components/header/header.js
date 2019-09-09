@@ -13,7 +13,7 @@ import patternBg from './patternBg.svg';
 const HeadBG = styled.header `
   width: 100%;
   position: relative;
-  padding-top: 24px;
+  //padding-top: 24px;
   &:before {
     content: '';
     position: absolute;
@@ -30,8 +30,9 @@ const HeadBG = styled.header `
 const Header = () => {
   return (
     <HeadBG>
-      <MobileLine/>
+      {/*<MobileLine/>*/}
       <Route path="/" exact render={HeaderHome}/>
+      <Route path="/wallet" render={HeaderHome}/>
       <Route path="/validation" exact render={HeaderValidation}/>
       <Route path="/notifanction" exact render={HeaderNotification}/>
       <Route path="/more" exact render={HeaderMore}/>
