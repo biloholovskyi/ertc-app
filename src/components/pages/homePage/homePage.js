@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from "styled-components";
 import {withRouter} from "react-router";
 
 import store from "../../../store/store";
 
 import Wallet from "../../wallet/wallet";
+import ContentWrapper from "../contentWrapper/contentWrapper";
 
 import Plus from "./plus.svg";
 import NotifanctionItem from "../../notifanctionItem/notifanctionItem";
 
-const AddWallet = styled.button `
+
+const AddWallet = styled.button`
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -27,7 +29,7 @@ const AddWallet = styled.button `
   margin: 0 auto;
 `;
 
-const PlusIcon = styled.div `
+const PlusIcon = styled.div`
   width: 24px;
   min-width: 24px;
   height: 24px;
@@ -38,26 +40,66 @@ const PlusIcon = styled.div `
   margin-right: 12px;
 `;
 
-const HomePage = () => {
-  const walletArr = store.filter(item => item.name === "wallet");
-  const walletList = walletArr[0].arr.map((item) => {
-    const {id, count, name} = item;
+export default class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showStatus: false
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState(({showStatus}) => {
+        return {
+          showStatus: true
+        }
+      })
+    }, 200);
+  }
+
+  componentWillUnmount() {
+    setTimeout(() => {
+      this.setState(({showStatus}) => {
+        return {
+          showStatus: false
+        }
+      })
+    }, 100);
+  }
+
+  render() {
+    const walletArr = store.filter(item => item.name === "wallet");
+    const walletList = walletArr[0].arr.map((item) => {
+      const {id, count, name} = item;
+      console.log(id);
+      return (
+        <Wallet
+          key={id}
+          count={count}
+          name={name}
+          page="home"
+          id={id}
+          openPage={this.props.openPage}
+        />
+      );
+    });
+
     return (
-      <Wallet
-        key={id}
-        count={count}
-        name={name}
-        page="home"
-        id={id}
-      />
-    );
-  });
-  return (
-    <>
-      {walletList}
-      <AddWallet><PlusIcon/>Добавить счет</AddWallet>
-    </>
-  )
+      <>
+        {
+          this.state.showStatus ? <View walletList={walletList} status={true}/> : <View walletList={walletList} status={false}/>
+        }
+      </>
+    )
+  }
 };
 
-export default withRouter(HomePage);
+const View = ({walletList, status}) => {
+  return (
+    <ContentWrapper status={status}>
+      {walletList}
+      <AddWallet><PlusIcon/>Добавить счет</AddWallet>
+    </ContentWrapper>
+  )
+};

@@ -6,6 +6,8 @@ import store from "../../../store/store";
 
 import Wallet from "../../wallet/wallet";
 import HistoryActions from "./historyActions/historyActions";
+import HomePage from "../homePage/homePage";
+import HeaderHome from "../../header/headerHome/headerHome";
 
 import BackImg from './back.svg';
 import MenuImg from './menu.svg';
@@ -56,7 +58,9 @@ export default class WalletPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showStatus: false
+      showStatus: false,
+      id: this.props.id,
+      update: false
     }
   }
 
@@ -80,33 +84,43 @@ export default class WalletPage extends Component {
     }, 100);
   }
 
+  changeWallet = (id) => {
+    this.setState(() => {
+      return {
+        id: id
+      }
+    });
+  };
+
   render() {
-    const {id} = this.props;
-    const {showStatus} = this.state;
+    const {openPage} = this.props;
+    const {showStatus, id, update} = this.state;
     const walletArr = store.filter(item => item.name === "wallet");
     const current = walletArr[0].arr.filter(item => item.id === id);
     return (
       <>
-        {showStatus ? <View item={current[0]} top="0%"/> : <View item={current[0]} top="100%"/>}
+        {showStatus ? <View item={current[0]} id={id} top="0%" openPage={openPage} changeWallet={this.changeWallet} update={update}/> : <View item={current[0]} id={id} top="100%" openPage={openPage} changeWallet={this.changeWallet} update={update}/>}
       </>
     )
   }
 };
 
-const View = ({item, top}) => {
+const View = ({item, id, top, openPage, changeWallet, update}) => {
   const {count, name} = item;
+  console.log("view " + id);
   return (
     <WalletWrapper top={top}>
       <NavLine>
-        <Link to="/">
-          <Back/>
-        </Link>
+        <Back onClick={() => {openPage(<HomePage openPage={openPage}/>, <HeaderHome/>)}}/>
         <Menu/>
       </NavLine>
       <Wallet
         count={count}
         name={name}
         page="wallet"
+        id={id}
+        changeWallet={changeWallet}
+        updateEvent={update}
       />
       <HistoryActions actions={item.actions}/>
     </WalletWrapper>

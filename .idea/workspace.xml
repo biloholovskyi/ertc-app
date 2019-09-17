@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277f8743-121c-499b-b31b-6efc4b8112cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/clickEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/coin/back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/coin/coin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/coin/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/contentWrapper/contentWrapper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/clickEffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/clickEffect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/navBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/homePage/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/homePage/homePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/morePage/morePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/morePage/morePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/notifanctionPage/notifanctionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/notifanctionPage/notifanctionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/validationPage/validationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/validationPage/validationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/walletPage/walletPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/wallet/wallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wallet/wallet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +43,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/coin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -37,6 +52,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\work\ertc-app\src\components\coin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\work\ertc-app\src\components" />
       <recent name="D:\Project\work\ertc-app\src\components\pages" />
@@ -90,7 +108,12 @@
       <workItem from="1567668348246" duration="11572000" />
       <workItem from="1567772315009" duration="11785000" />
       <workItem from="1567840833391" duration="9897000" />
-      <workItem from="1568016762241" duration="17739000" />
+      <workItem from="1568016762241" duration="17823000" />
+      <workItem from="1568312272355" duration="6944000" />
+      <workItem from="1568353447994" duration="12844000" />
+      <workItem from="1568486615402" duration="5097000" />
+      <workItem from="1568528513694" duration="1218000" />
+      <workItem from="1568709454851" duration="2417000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1567416925652</created>
@@ -134,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568056976228</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="click effect in navbar">
+      <created>1568064079623</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568064079623</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +190,7 @@
     <MESSAGE value="pre finish web demo" />
     <MESSAGE value="finish web demo" />
     <MESSAGE value="editing and creating animations open component" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing and creating animations open component" />
+    <MESSAGE value="click effect in navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="click effect in navbar" />
   </component>
 </project>

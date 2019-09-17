@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
@@ -7,6 +7,14 @@ import NavBar from "../navBar/navBar";
 import Content from "../content/content";
 import WalletPage from "../pages/walletPage/walletPage";
 import HomePage from "../pages/homePage/homePage";
+import ValidationPage from "../pages/validationPage/validationPage";
+import NotifanctionPage from "../pages/notifanctionPage/notifanctionPage";
+import MorePage from "../pages/morePage/morePage";
+import MobileLine from "../mobileLine/mobileLine";
+import HeaderHome from "../header/headerHome/headerHome";
+import HeaderValidation from "../header//headerValidation/headerValidation";
+import HeaderNotification from "../header//headerNotifanction/headerNotifanction";
+import HeaderMore from "../header//headerMore/headerMore";
 
 const AppWrapper = styled.div `
   width: 100%;
@@ -30,26 +38,70 @@ const MobileWrapper = styled.div`
   justify-content: space-between;
 `;
 
-function App() {
-  return (
-    <Router>
-      <AppWrapper>
-        <MobileWrapper>
-          <Header/>
-          <Content/>
-          <Switch>
-            <Route path="/wallet/:id" exact render={
-              ({match}) => {
-                const {id} = match.params;
-                return <WalletPage id={id}/>
-              }
-            }/>
-          </Switch>
-          <NavBar/>
-        </MobileWrapper>
-      </AppWrapper>
-    </Router>
-  );
-}
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showStatus: false,
+      showPage: <HomePage openPage={this.openPage}/>,
+      showHead: <HeaderHome/>
+    }
+  }
 
-export default App;
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState(({showStatus}) => {
+        return {
+          showStatus: true
+        }
+      })
+    }, 200);
+  }
+
+  componentWillUnmount() {
+    setTimeout(() => {
+      this.setState(({showStatus}) => {
+        return {
+          showStatus: false
+        }
+      })
+    }, 100);
+  }
+
+  openPage = (page, head) => {
+    this.setState(({showStatus}) => {
+      return {
+        showPage: page,
+        showHead: head
+      }
+    })
+  };
+
+  render() {
+    const {showPage, showHead} = this.state;
+    return (
+      <>
+        <AppWrapper>
+          <MobileWrapper>
+            <Header showHead={showHead}/>
+            {showPage}
+            {/*<Switch>*/}
+            {/*  /!*<Route path="/" exact render={HomePage}/>*!/*/}
+            {/*  /!*<Route path="/wallet/" render={HomePage}/>*!/*/}
+            {/*  <Route path="/validation" exact render={ValidationPage}/>*/}
+            {/*  <Route path="/notifanction" exact render={NotifanctionPage}/>*/}
+            {/*  <Route path="/more" exact render={MorePage}/>*/}
+            {/*  <Route path="/wallet/:id" exact render={*/}
+            {/*    ({match}) => {*/}
+            {/*      const {id} = match.params;*/}
+            {/*      return <WalletPage id={id}/>*/}
+            {/*    }*/}
+            {/*  }/>*/}
+            {/*</Switch>*/}
+            <NavBar openPage={this.openPage}/>
+          </MobileWrapper>
+        </AppWrapper>
+      </>
+    );
+  }
+}

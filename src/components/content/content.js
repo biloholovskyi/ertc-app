@@ -20,13 +20,12 @@ const ContentWrapper = styled.div `
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar { width: 0 !important }
-  
 `;
 
 export default class Content extends Component {
   render() {
     return (
-      <ContentWrapper>
+      <>
         <Switch>
           <Route path="/" exact render={HomePage}/>
           <Route path="/wallet/" render={HomePage}/>
@@ -34,7 +33,7 @@ export default class Content extends Component {
           <Route path="/notifanction" exact render={NotifanctionPage}/>
           <Route path="/more" exact render={MorePage}/>
         </Switch>
-      </ContentWrapper>
+      </>
     )
   }
 };

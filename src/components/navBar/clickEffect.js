@@ -7,7 +7,7 @@ const ClickBox = styled.div `
   height: 150px;
   border-radius: 50%;
   background-color: #627E51;
-  opacity: ${props => props.status === "scale" ? "0" : props.status === true ? ".2" : "0"};
+  opacity: ${props => props.status === "scale" ? "0" : props.status === true ? ".35" : "0"};
   transition: all .3s ease-in-out;
   top: 50%;
   left: 50%;

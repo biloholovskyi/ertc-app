@@ -27,15 +27,16 @@ const HeadBG = styled.header `
   }
 `;
 
-const Header = () => {
+const Header = ({showHead}) => {
   return (
     <HeadBG>
+      {showHead}
       {/*<MobileLine/>*/}
-      <Route path="/" exact render={HeaderHome}/>
-      <Route path="/wallet" render={HeaderHome}/>
-      <Route path="/validation" exact render={HeaderValidation}/>
-      <Route path="/notifanction" exact render={HeaderNotification}/>
-      <Route path="/more" exact render={HeaderMore}/>
+      {/*<Route path="/" exact render={HeaderHome}/>*/}
+      {/*<Route path="/wallet" render={HeaderHome}/>*/}
+      {/*<Route path="/validation" exact render={HeaderValidation}/>*/}
+      {/*<Route path="/notifanction" exact render={HeaderNotification}/>*/}
+      {/*<Route path="/more" exact render={HeaderMore}/>*/}
     </HeadBG>
   )
 };
